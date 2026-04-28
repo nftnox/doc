@@ -41,7 +41,7 @@ SYSTEM = (
 )
 
 # ── Rate limiting: 10 requests per IP per hour ────────────────
-RATE_LIMIT  = 10
+RATE_LIMIT  = 100
 RATE_WINDOW = 3600  # seconds
 _rate_store: dict[str, list[float]] = defaultdict(list)
 
